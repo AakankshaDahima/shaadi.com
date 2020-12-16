@@ -1,0 +1,101 @@
+body{
+    background:#51A7AD;
+    font-family: tahoma;
+    color: #545052;
+}
+
+#todo-table{
+    position: relative;
+    width: 95%;
+    border-radius: 5px;
+    background: #85c2c6;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: -3px -2px 7px -1px #4b7375;
+}
+
+#todo-table form:after{
+    margin: 0;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+input[type="text"]{
+    width: 73%;
+    border-radius: 10px;
+    padding: 20px;
+    background: #DCD2D8;
+    border: 0;
+    float: left;
+    font-size: 20px;
+    color: #545052;
+}
+
+input:focus {
+    outline: none;
+}
+
+button{
+    padding: 20px;
+    width: 25%;
+    float: right;
+    border-radius: 10px;
+    background:#c9c1c6;
+    border: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 1em;
+    box-sizing: border-box;
+    font-family: arial;
+    background: #74b4b8;
+    margin: 1em 0;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+li:hover{
+    text-decoration: line-through;
+    background: #ded9dc;
+    outline: none;
+}
+
+.todo-logo{
+    width: 16%;
+    display: inline-flex;
+}
+
+#todo-icon{
+    padding: 1em 5em 2em 5em;
+}
+
+h1{
+    margin-bottom: 0;
+    text-indent: -10000px;
+}
+
+.priority{
+    font-size: 2.5em;
+    float: right;
+    margin-top: -10px;
+}
+
+.fill{
+    color: #C46200;
+}
