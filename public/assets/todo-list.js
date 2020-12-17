@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   $('.priority').on('click', function(){
-    var item = $(this).parent().clone().children().remove().end().text().trim();
+    var item = $(this).parent().clone().children().remove().end().text().trim().replace(/ /g, "-");
     $.ajax({
       type: 'PUT',
       url: '/todo/' + item,
@@ -27,7 +27,7 @@ $(document).ready(function(){
   });
 
   $('li').on('click', function(){
-      var item = $(this).text().replace(/ /g, "-");
+      var item = $(this).clone().children().remove().end().text().trim().replace(/ /g, "-");
       $.ajax({
         type: 'DELETE',
         url: '/todo/' + item,
