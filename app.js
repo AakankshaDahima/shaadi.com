@@ -2,7 +2,7 @@ import express, { json } from 'express';
 import todoController from './controllers/todoController.js';
 import cookieParser from 'cookie-parser';
 
-const port = 3000;
+const port = process.env.PORT;
 var app = express();
 
 app.set('view engine', 'ejs');
